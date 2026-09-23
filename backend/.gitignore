@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.tgz
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swo*
+
+# Optional macOS files
+.DS_Store
+
+# Optional Windows files
+Thumbs.db
