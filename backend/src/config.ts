@@ -10,6 +10,11 @@ const backendDir = path.resolve(
 loadEnv({ path: path.join(backendDir, ".env") });
 const envSchema = z.object({
     PORT: z.coerce.number().default(4000),
+    DATABRICKS_HOST: z.url(),
+    DATABRICKS_TOKEN: z.string().min(1),
+    DATABRICKS_SERVER_HOSTNAME: z.string().min(1),
+    DATABRICKS_HTTP_PATH: z.string().min(1),
+    DATABRICKS_CATALOG: z.string().default("signalforge"),
 
 });
 
